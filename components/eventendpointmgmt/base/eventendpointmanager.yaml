@@ -1,0 +1,34 @@
+apiVersion: events.ibm.com/v1beta1
+kind: EventEndpointManagement
+metadata:
+  name: eventendpointmgr
+spec:
+  license:
+    accept: true
+    license: L-JTPV-KYG8TF
+    metric: VIRTUAL_PROCESSOR_CORE
+    use: CloudPakForIntegrationNonProduction
+  manager:
+    tls: 
+      ui:
+        secretName: default-cert-copy
+      trustedCertificates:
+        - secretName: letsencrypt-chain
+          certificate: ca.crt
+    authConfig:
+      authType: LOCAL
+    storage:
+      storageClassName: PATCHED_BY_KUSTOMIZE
+      type: persistent-claim
+    template:
+      pod:
+        spec:
+          containers:
+            - name: manager
+              resources:
+                limits:
+                  cpu: '0.5'
+                  memory: 512Mi
+                requests:
+                  cpu: '0.25'
+                  memory: 256Mi
