@@ -12,8 +12,6 @@ spec:
           namespace: cp4i
         - name: mq
           namespace: cp4i
-#        - name: eventstreams
-#          namespace: cp4i
         - name: cert-utils
           namespace: cert-utils-operator       
         - name: clusterresourceoverride
