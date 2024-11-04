@@ -4,7 +4,7 @@ metadata:
   name: cp4i-operators
 spec:
   generators:
-  - list:
+    - list:
       elements:
         - name: openshift-cert-manager
           namespace: cert-manager-operator
