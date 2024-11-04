@@ -4,7 +4,7 @@ metadata:
   name: cp4i-operators
 spec:
   generators:
-    - list:
+  - list:
       elements:
         - name: openshift-cert-manager
           namespace: cert-manager-operator
@@ -16,7 +16,7 @@ spec:
           namespace: cert-utils-operator       
         - name: clusterresourceoverride
           namespace: cp4i
-       template:
+  template:
     metadata:
       name: '{{name}}-operator'
       labels:
