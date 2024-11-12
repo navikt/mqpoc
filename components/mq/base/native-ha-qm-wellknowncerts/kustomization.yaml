@@ -19,4 +19,4 @@ resources:
   - qm.yaml
   #- sni-route.yaml
 
-  - tls/mq-server-certificate.yaml
+  #- tls/mq-server-certificate.yaml
