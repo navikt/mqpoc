@@ -69,7 +69,7 @@ spec:
     trust:
       - name: letsencrypt
         secret:
-          secretName: letsencrypt-chain
+          secretName: default-cert-copy
           items:
             - ca.crt
   web:
