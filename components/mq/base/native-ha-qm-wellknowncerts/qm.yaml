@@ -67,9 +67,9 @@ spec:
             - tls.key
             - tls.crt
     trust:
-      - name: letsencrypt
+      - name: digicertencrypt
         secret:
-          secretName: default-cert-copy
+          secretName: digicert-chain
           items:
             - ca.crt
   web:
