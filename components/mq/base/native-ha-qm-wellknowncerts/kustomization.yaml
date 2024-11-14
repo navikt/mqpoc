@@ -20,3 +20,4 @@ resources:
   #- sni-route.yaml
 
   #- tls/mq-server-certificate.yaml
+  - tls/trustsecret.yaml
